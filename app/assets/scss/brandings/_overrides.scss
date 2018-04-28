@@ -1,0 +1,9 @@
+.btn{
+    font-family: Sailec-Bold,Helvetica,sans-serif;
+    letter-spacing: 0.5px;
+}
+.collapse{
+    &.in{
+        display: block !important;
+    }
+}

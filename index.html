@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./app/assets/stylesheet/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <script src="./main.js"></script>
+    <title>Gardening made easy</title>
+
+</head>
+<body ng-app="gardenKits">
+    <div ng-controller="mainCtrl as vm">
+    <h1>Gardening</h1>
+        <button type="button" class="btn btn-primary">{{vm.thisValue}}</button>
+        <span class="oi oi-account-login"  aria-hidden="true"></span>
+        <div ng-include="'app/header/header.html'"></div>
+    </div>
+    <ui-view></ui-view>
+</body>
+</html>
