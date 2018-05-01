@@ -1,10 +1,3 @@
-.btn {
-  font-family: Sailec-Bold,Helvetica,sans-serif;
-  letter-spacing: 0.5px; }
-
-.collapse.in {
-  display: block !important; }
-
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6273,6 +6266,28 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
+
+.btn {
+  font-family: Sailec-Bold,Helvetica,sans-serif;
+  letter-spacing: 0.5px; }
+
+.collapse.in {
+  display: block !important; }
+
+@media (max-width: 767.98px) {
+  .navbar.gk-nav {
+    justify-content: unset; } }
+
+.navbar.gk-nav .navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+  background: none;
+  border: 0; }
+
+@media (max-width: 767.98px) {
+  .navbar.gk-nav .navbar-brand {
+    margin-right: 0;
+    margin-left: 1rem; } }
 
 /* Bootstrap */
 /* Override Bootstrap default variable */

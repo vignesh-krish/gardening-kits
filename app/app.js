@@ -22,9 +22,10 @@ function routerConfig($stateProvider, $urlRouterProvider) {
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-            // we'll get to this in a bit       
-        });
+        .state('aboutus', {
+            url: '/aboutus',
+            templateUrl: './app/about-us/about-us.html'
+         });
 
 }
 
