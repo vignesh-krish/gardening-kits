@@ -17,11 +17,20 @@
 </head>
 <body ng-app="gardenKits">
     <div ng-controller="mainCtrl as vm">
-    <h1>Gardening</h1>
-        <button type="button" class="btn btn-primary">{{vm.thisValue}}</button>
-        <span class="oi oi-account-login"  aria-hidden="true"></span>
-        <div ng-include="'app/header/header.html'"></div>
+
     </div>
-    <ui-view></ui-view>
+    <div class="first-half">
+            <div ng-include="'app/header/header.html'"></div>    
+        <div class="container">
+            <gk-banner></gk-banner> 
+        </div>
+            
+    </div>
+    <div class="second-half">
+            <div class="container">
+                    <ui-view></ui-view>
+              </div>
+    </div>
+    
 </body>
 </html>

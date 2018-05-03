@@ -1,0 +1,57 @@
+body{
+    background: #d7e0d561;
+}
+.nav-container{
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .12);
+}
+.first-half{
+    // background-image:
+    //  url(/assets/images/freshdesk/pattern-fdesk-dark-0c069426.svg),
+    //  linear-gradient(to bottom,#09430e,#21796a);
+    background: rgba(36,107,24,1);
+    background: -moz-linear-gradient(top, rgba(36,107,24,1) 0%, rgba(34,64,22,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(36,107,24,1)), color-stop(100%, rgba(34,64,22,1)));
+    background: -webkit-linear-gradient(top, rgba(36,107,24,1) 0%, rgba(34,64,22,1) 100%);
+    background: -o-linear-gradient(top, rgba(36,107,24,1) 0%, rgba(34,64,22,1) 100%);
+    background: -ms-linear-gradient(top, rgba(36,107,24,1) 0%, rgba(34,64,22,1) 100%);
+    background: linear-gradient(to bottom, rgba(36,107,24,1) 0%, rgba(34,64,22,1) 100%);
+    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#246b18', endColorstr='#224016', GradientType=0 );
+}
+.second-half{
+//    background: #c7fa9e;
+}
+
+.w_banner{
+    .banner-image{
+       // background: url("../images/bamboo-board.jpg") 0 0 no-repeat;
+        background-size: cover;
+        min-height: 180px;
+        @include media-breakpoint-down(sm) {
+            min-height: 280px;
+        }        
+        width: 100%;
+        position: relative;
+    }
+    .banner-desc {
+        position: absolute;
+        //left: 50%;
+        top: 50%;
+        width:50%;
+        @include media-breakpoint-down(sm) {
+            width:100%;
+        }
+        transform: translate(0, -50%);
+    }
+    &.dark{
+        h1{
+            color:#fff;
+            @include media-breakpoint-down(sm) {
+                font-size: 28px;
+             } 
+        }
+    }
+}
+.gk-card-container{
+    margin: 15px 0;
+}

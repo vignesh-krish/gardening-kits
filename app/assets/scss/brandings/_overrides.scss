@@ -1,6 +1,7 @@
 .btn{
     font-family: Sailec-Bold,Helvetica,sans-serif;
     letter-spacing: 0.5px;
+    font-size: 12px;
 }
 .collapse{
     &.in{
@@ -9,6 +10,10 @@
 }
 .navbar{
     &.gk-nav {
+        a{
+            color:#fff;
+        }
+        padding: 0.5rem 0;
         @include media-breakpoint-down(sm) {
             justify-content: unset;
          }         
@@ -17,6 +22,12 @@
             font-size: 1rem;
             background: none;
             border: 0;
+            .oi-menu{
+                &:before{
+                    color: #fff;
+                }
+            }
+           
         }
         .navbar-brand{
         @include media-breakpoint-down(sm) {
@@ -26,3 +37,11 @@
         }
     }
 } 
+.card{
+    &.gk-card{
+        border: 0 none;
+        margin-right: 4px;
+        .card-img-top{
+        }
+    }
+}
